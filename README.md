@@ -7,5 +7,7 @@ Run locally:
 ```bash
 npm install
 npm run dev
-# open http://localhost:3000
+# open http://localhost:3002
+
+Nota: el servidor de desarrollo usa `webpack` por defecto (si quieres probar Turbopack, ejecuta `npm run dev:turbopack`).
 ```

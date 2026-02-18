@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "node ./scripts/dev.js",
+    "dev:turbopack": "npx next dev --turbo -p 3002",
     "fetch-image": "node ./scripts/fetch-image.js",
+    "copy-images": "node ./scripts/copy-images.js",
     "build": "next build",
-    "start": "next start -p 3000"
+    "start": "next start -p 3002"
   },
   "dependencies": {
     "next": "^16.1.6",

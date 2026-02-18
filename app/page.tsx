@@ -12,11 +12,12 @@ export default function Home() {
           {/* Cover */}
           <figure className="relative mb-4 h-[11.25rem] w-full overflow-hidden rounded-[0.875rem]">
             <Image
-              src="/images/card1.png"
+              src="/api/images/card1.png"
               alt="Liam O'Connor cover"
               fill
               className="object-cover"
               sizes="(max-width: 48rem) 100vw, 22.5rem"
+              unoptimized
             />
 
             {/* Badge */}
@@ -32,11 +33,12 @@ export default function Home() {
               <span className="-mt-6 block">
                 <figure className="relative h-20 w-20 overflow-hidden rounded-full ring-4 ring-white shadow-[0_0.625rem_1.875rem_rgba(2,6,23,0.4)]">
                   <Image
-                    src="/images/card1.png"
+                    src="/api/images/card1.png"
                     alt="Liam O'Connor"
                     fill
                     className="object-cover"
                     sizes="5rem"
+                    unoptimized
                   />
                 </figure>
               </span>
@@ -103,11 +105,12 @@ export default function Home() {
           {/* Cover */}
           <figure className="relative mb-4 h-[11.25rem] w-full overflow-hidden rounded-[0.875rem]">
             <Image
-              src="/images/card2.png"
+              src="/api/images/card2.png"
               alt="Alex Turner cover"
               fill
               className="object-cover"
               sizes="(max-width: 48rem) 100vw, 22.5rem"
+              unoptimized
             />
 
             {/* Badge */}
@@ -123,11 +126,12 @@ export default function Home() {
               <span className="-mt-6 block">
                 <figure className="relative h-20 w-20 overflow-hidden rounded-full ring-4 ring-white shadow-[0_0.625rem_1.875rem_rgba(2,6,23,0.4)]">
                   <Image
-                    src="/images/card2.png"
+                    src="/api/images/card2.png"
                     alt="Alex Turner"
                     fill
                     className="object-cover"
                     sizes="5rem"
+                    unoptimized
                   />
                 </figure>
               </span>

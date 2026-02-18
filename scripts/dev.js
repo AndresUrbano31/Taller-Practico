@@ -18,7 +18,7 @@ function isPortFree(port) {
   })
 }
 
-async function findPort(start = 3000, max = start + 100) {
+async function findPort(start = 3002, max = start + 100) {
   for (let p = start; p <= max; p++) {
     // eslint-disable-next-line no-await-in-loop
     if (await isPortFree(p)) return p
@@ -27,7 +27,7 @@ async function findPort(start = 3000, max = start + 100) {
 }
 
 ;(async () => {
-  const requested = parseInt(process.env.PORT || '3000', 10)
+  const requested = parseInt(process.env.PORT || '3002', 10)
 
   // if a dev lock exists and the requested port is busy, assume a running dev server
   const lockPath = path.join(__dirname, '..', '.next', 'dev', 'lock')
@@ -50,7 +50,8 @@ async function findPort(start = 3000, max = start + 100) {
   const port = await findPort(requested)
   console.log(`Starting Next.js dev server on port ${port} (requested ${requested})`)
 
-  const cmd = `npx next dev -p ${port}`
+  // use webpack for development by default (more stable than Turbopack here)
+  const cmd = `npx next dev --webpack -p ${port}`
   const child = spawn(cmd, { stdio: 'inherit', shell: true })
 
   child.on('exit', (code) => process.exit(code))
