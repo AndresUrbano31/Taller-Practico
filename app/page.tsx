@@ -127,7 +127,7 @@ export default function Home() {
                 <figure className="relative h-20 w-20 overflow-hidden rounded-full ring-4 ring-white shadow-[0_0.625rem_1.875rem_rgba(2,6,23,0.4)]">
                   <Image
                     src="/images/Amor.png"
-                    alt="Alex Turner"
+                    alt="JM"
                     fill
                     className="object-cover"
                     sizes="5rem"
